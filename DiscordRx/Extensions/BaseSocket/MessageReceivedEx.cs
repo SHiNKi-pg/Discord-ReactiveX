@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace DiscordRx.Extensions.BaseSocket
 {
     /// <summary>
-    /// MessageReceived 拡張メソッド定義クラス
+    /// <seealso cref="BaseSocketClient.MessageReceived"/> 拡張メソッド定義クラス
     /// </summary>
     public static class MessageReceivedEx
     {
