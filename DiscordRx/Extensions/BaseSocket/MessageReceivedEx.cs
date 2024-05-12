@@ -14,6 +14,15 @@ namespace DiscordRx.Extensions.BaseSocket
     /// </summary>
     public static class MessageReceivedEx
     {
+        private static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient, Func<Action<SocketMessage>, Func<SocketMessage, Task>> conversion)
+        {
+            return Observable.FromEvent<Func<SocketMessage, Task>, SocketMessage>(
+                conversion,
+                h => socketClient.MessageReceived += h,
+                h => socketClient.MessageReceived -= h
+            );
+        }
+
         /// <summary>
         /// メッセージを受信すると通知されるオブジェクトを返します。
         /// </summary>
@@ -21,15 +30,11 @@ namespace DiscordRx.Extensions.BaseSocket
         /// <returns></returns>
         public static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient)
         {
-            return Observable.FromEvent<Func<SocketMessage, Task>, SocketMessage>(
-                h => e =>
-                {
-                    h(e);
-                    return Task.CompletedTask;
-                },
-                h => socketClient.MessageReceived += h,
-                h => socketClient.MessageReceived -= h
-            );
+            return socketClient.MessageReceivedObservable(h => e =>
+            {
+                h(e);
+                return Task.CompletedTask;
+            });
         }
 
         /// <summary>
@@ -40,16 +45,12 @@ namespace DiscordRx.Extensions.BaseSocket
         /// <returns></returns>
         public static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient, Func<SocketMessage, bool> filter)
         {
-            return Observable.FromEvent<Func<SocketMessage, Task>, SocketMessage>(
-                h => e =>
-                {
-                    if (filter(e))
-                        h(e);
-                    return Task.CompletedTask;
-                },
-                h => socketClient.MessageReceived += h,
-                h => socketClient.MessageReceived -= h
-            );
+            return socketClient.MessageReceivedObservable(h => e =>
+            {
+                if (filter(e))
+                    h(e);
+                return Task.CompletedTask;
+            });
         }
 
         /// <summary>
@@ -60,15 +61,11 @@ namespace DiscordRx.Extensions.BaseSocket
         /// <returns></returns>
         public static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient, Func<SocketMessage, Task<bool>> filter)
         {
-            return Observable.FromEvent<Func<SocketMessage, Task>, SocketMessage>(
-                h => async e =>
-                {
-                    if (await filter(e))
-                        h(e);
-                },
-                h => socketClient.MessageReceived += h,
-                h => socketClient.MessageReceived -= h
-            );
+            return socketClient.MessageReceivedObservable(h => async e =>
+            {
+                if (await filter(e))
+                    h(e);
+            });
         }
     }
 }
