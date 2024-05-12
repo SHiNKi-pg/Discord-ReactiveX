@@ -14,7 +14,7 @@ namespace DiscordRx.Extensions.BaseSocket
     /// </summary>
     public static class MessageReceivedEx
     {
-        private static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient, Func<Action<SocketMessage>, Func<SocketMessage, Task>> conversion)
+        private static IObservable<SocketMessage> NotifyMessageReceived(this BaseSocketClient socketClient, Func<Action<SocketMessage>, Func<SocketMessage, Task>> conversion)
         {
             return Observable.FromEvent<Func<SocketMessage, Task>, SocketMessage>(
                 conversion,
@@ -28,9 +28,9 @@ namespace DiscordRx.Extensions.BaseSocket
         /// </summary>
         /// <param name="socketClient"></param>
         /// <returns></returns>
-        public static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient)
+        public static IObservable<SocketMessage> NotifyMessageReceived(this BaseSocketClient socketClient)
         {
-            return socketClient.MessageReceivedObservable(h => e =>
+            return socketClient.NotifyMessageReceived(h => e =>
             {
                 h(e);
                 return Task.CompletedTask;
@@ -43,9 +43,9 @@ namespace DiscordRx.Extensions.BaseSocket
         /// <param name="socketClient"></param>
         /// <param name="filter">通知データの選択関数</param>
         /// <returns></returns>
-        public static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient, Func<SocketMessage, bool> filter)
+        public static IObservable<SocketMessage> NotifyMessageReceived(this BaseSocketClient socketClient, Func<SocketMessage, bool> filter)
         {
-            return socketClient.MessageReceivedObservable(h => e =>
+            return socketClient.NotifyMessageReceived(h => e =>
             {
                 if (filter(e))
                     h(e);
@@ -59,9 +59,9 @@ namespace DiscordRx.Extensions.BaseSocket
         /// <param name="socketClient"></param>
         /// <param name="filter">通知データの選択関数</param>
         /// <returns></returns>
-        public static IObservable<SocketMessage> MessageReceivedObservable(this BaseSocketClient socketClient, Func<SocketMessage, Task<bool>> filter)
+        public static IObservable<SocketMessage> NotifyMessageReceived(this BaseSocketClient socketClient, Func<SocketMessage, Task<bool>> filter)
         {
-            return socketClient.MessageReceivedObservable(h => async e =>
+            return socketClient.NotifyMessageReceived(h => async e =>
             {
                 if (await filter(e))
                     h(e);
