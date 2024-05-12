@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DiscordRx.UnitTest
 {
-    internal abstract class SocketDiscordTestBase : IClassFixture<AppSettingsFixture>, IDisposable
+    public abstract class SocketDiscordTestBase : IClassFixture<AppSettingsFixture>, IDisposable
     {
         private readonly AppSettingsFixture _appsettingsFixture;
 
@@ -18,7 +18,7 @@ namespace DiscordRx.UnitTest
         public SocketDiscordTestBase(AppSettingsFixture appsettingsFixture)
         {
             _appsettingsFixture = appsettingsFixture;
-            token = _appsettingsFixture.Configuration.GetSection("testing")?.GetSection("token")?.ToString()!;
+            token = _appsettingsFixture.Configuration.GetSection("testing")?.GetSection("token")?.Value!;
 
             Client = new DiscordSocketClient(new DiscordSocketConfig()
             {
@@ -28,7 +28,14 @@ namespace DiscordRx.UnitTest
 
         protected async Task LoginAsync()
         {
+            await Client.StartAsync();
             await Client.LoginAsync(Discord.TokenType.Bot, token);
+        }
+
+        protected async Task LogoutAsync()
+        {
+            await Client.LogoutAsync();
+            await Client.StopAsync();
         }
 
         public void Dispose()
