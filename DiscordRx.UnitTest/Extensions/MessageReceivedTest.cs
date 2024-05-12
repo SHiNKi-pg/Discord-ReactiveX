@@ -18,12 +18,19 @@ namespace DiscordRx.UnitTest.Extensions
         public async Task MessageTest()
         {
             await base.LoginAsync();
-            Assert.True(Client.CurrentUser is not null);
-            
-            await Client
-                .NotifyMessageReceived()
-                .Take(1)
-                .Timeout(TimeSpan.FromSeconds(30));
+            try
+            {
+                Assert.True(Client.CurrentUser is not null);
+
+                await Client
+                    .NotifyMessageReceived()
+                    .Take(1)
+                    .Timeout(TimeSpan.FromSeconds(30));
+            }
+            finally
+            {
+                await base.LogoutAsync();
+            }
         }
     }
 }
