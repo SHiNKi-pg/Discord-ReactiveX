@@ -1,7 +1,9 @@
 ﻿using Discord.WebSocket;
+using DiscordRx.Extensions.DiscordSocket;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,6 +32,7 @@ namespace DiscordRx.UnitTest
         {
             await Client.StartAsync();
             await Client.LoginAsync(Discord.TokenType.Bot, token);
+            await Client.NotifyReady().Take(1);
         }
 
         protected async Task LogoutAsync()
