@@ -4,9 +4,9 @@ Discord.NET Event To Observable
 # 対応状況
 ## Discord.Rest
 ### BaseDiscordClient
-- [*] Log
-- [*] LoggedIn
-- [*] LoggedOut
+- [x] Log
+- [x] LoggedIn
+- [x] LoggedOut
 - [ ] SentRequest
 
 ## Discord.WebSocket
@@ -20,7 +20,7 @@ Discord.NET Event To Observable
 - [ ] AutoModRuleCreated
 - [ ] AutoModRuleDeleted
 - [ ] AutoModRuleUpdated
-- [*] ButtonExecuted
+- [x] ButtonExecuted
 - [ ] ChannelCreated
 - [ ] ChannelDestroyed
 - [ ] ChannelUpdated
@@ -52,15 +52,15 @@ Discord.NET Event To Observable
 - [ ] JoinedGuild
 - [ ] LeftGuild
 - [ ] MessageCommandExecuted
-- [*] MessageDeleted
-- [*] MessageReceived
+- [x] MessageDeleted
+- [x] MessageReceived
 - [ ] MessageBulkDeleted
 - [ ] MessageUpdated
 - [ ] ModalSubmitted
 - [ ] PollVoteAdded
 - [ ] PollVoteRemoved
 - [ ] PresenceUpdated
-- [*] ReactionAdded
+- [x] ReactionAdded
 - [ ] ReactionRemoved
 - [ ] ReactionCleared
 - [ ] ReactionsRemovedForEmote
@@ -85,7 +85,7 @@ Discord.NET Event To Observable
 - [ ] UserBanned
 - [ ] UserCommandExecuted
 - [ ] UserIsTyping
-- [*] UserJoined
+- [x] UserJoined
 - [ ] UserLeft
 - [ ] UserUnbanned
 - [ ] UserUpdated
@@ -103,4 +103,4 @@ Discord.NET Event To Observable
 - [ ] Connected
 - [ ] Disconnected
 - [ ] LatencyUpdated
-- [*] Ready
+- [x] Ready
