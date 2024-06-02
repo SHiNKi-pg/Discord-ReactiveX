@@ -4,10 +4,10 @@ Discord.NET Event To Observable
 # 対応状況
 ## Discord.Rest
 ### BaseDiscordClient
-- [] Log
-- [] LoggedIn
-- [] LoggedOut
-- [] SentRequest
+- [*] Log
+- [*] LoggedIn
+- [*] LoggedOut
+- [ ] SentRequest
 
 ## Discord.WebSocket
 ### BaseSocketClient
@@ -20,7 +20,7 @@ Discord.NET Event To Observable
 - [ ] AutoModRuleCreated
 - [ ] AutoModRuleDeleted
 - [ ] AutoModRuleUpdated
-- [ ] ButtonExecuted
+- [*] ButtonExecuted
 - [ ] ChannelCreated
 - [ ] ChannelDestroyed
 - [ ] ChannelUpdated
@@ -52,15 +52,15 @@ Discord.NET Event To Observable
 - [ ] JoinedGuild
 - [ ] LeftGuild
 - [ ] MessageCommandExecuted
-- [ ] MessageDeleted
-- [ ] MessageReceived
+- [*] MessageDeleted
+- [*] MessageReceived
 - [ ] MessageBulkDeleted
 - [ ] MessageUpdated
 - [ ] ModalSubmitted
 - [ ] PollVoteAdded
 - [ ] PollVoteRemoved
 - [ ] PresenceUpdated
-- [ ] ReactionAdded
+- [*] ReactionAdded
 - [ ] ReactionRemoved
 - [ ] ReactionCleared
 - [ ] ReactionsRemovedForEmote
@@ -85,7 +85,7 @@ Discord.NET Event To Observable
 - [ ] UserBanned
 - [ ] UserCommandExecuted
 - [ ] UserIsTyping
-- [ ] UserJoined
+- [*] UserJoined
 - [ ] UserLeft
 - [ ] UserUnbanned
 - [ ] UserUpdated
@@ -94,13 +94,13 @@ Discord.NET Event To Observable
 - [ ] WebhooksUpdated
 
 ### DiscordSharedClient
-- [] ShardConnected
-- [] ShardDisconnected
-- [] ShardLatencyUpdated
-- [] ShardReady
+- [ ] ShardConnected
+- [ ] ShardDisconnected
+- [ ] ShardLatencyUpdated
+- [ ] ShardReady
 
 ### DiscordSocketClient
-- [] Connected
-- [] Disconnected
-- [] LatencyUpdated
-- [] Ready
+- [ ] Connected
+- [ ] Disconnected
+- [ ] LatencyUpdated
+- [*] Ready
