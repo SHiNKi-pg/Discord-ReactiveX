@@ -2,7 +2,15 @@
 Discord.NET Event To Observable
 
 # 対応状況
-## Discord.WebSocket.BaseSocketClient
+## Discord.Rest
+### BaseDiscordClient
+- [] Log
+- [] LoggedIn
+- [] LoggedOut
+- [] SentRequest
+
+## Discord.WebSocket
+### BaseSocketClient
 - [ ] ApplicationCommandCreated
 - [ ] ApplicationCommandDeleted
 - [ ] ApplicationCommandUpdated
@@ -84,3 +92,15 @@ Discord.NET Event To Observable
 - [ ] UserVoiceStateUpdated
 - [ ] VoiceServerUpdated
 - [ ] WebhooksUpdated
+
+### DiscordSharedClient
+- [] ShardConnected
+- [] ShardDisconnected
+- [] ShardLatencyUpdated
+- [] ShardReady
+
+### DiscordSocketClient
+- [] Connected
+- [] Disconnected
+- [] LatencyUpdated
+- [] Ready
