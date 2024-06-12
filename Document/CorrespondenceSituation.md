@@ -54,7 +54,7 @@
 - [x] MessageReceived
 - [ ] MessageBulkDeleted
 - [x] MessageUpdated
-- [ ] ModalSubmitted
+- [x] ModalSubmitted
 - [ ] PollVoteAdded
 - [ ] PollVoteRemoved
 - [ ] PresenceUpdated
