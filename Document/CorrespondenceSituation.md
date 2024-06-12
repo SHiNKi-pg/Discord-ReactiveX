@@ -60,8 +60,8 @@
 - [ ] PresenceUpdated
 - [x] ReactionAdded
 - [x] ReactionRemoved
-- [x] ReactionCleared
-- [ ] ReactionsRemovedForEmote
+- [x] ReactionsCleared
+- [x] ReactionsRemovedForEmote
 - [ ] RecipientAdded
 - [ ] RecipientRemoved
 - [ ] RequestToSpeak
