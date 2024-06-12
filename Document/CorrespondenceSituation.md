@@ -30,7 +30,7 @@
 - [ ] GuildJoinRequestDeleted
 - [ ] GuildMembersDownloaded
 - [ ] GuildMemberUpdated
-- [ ] GuildScheduledEventCancelled
+- [x] GuildScheduledEventCancelled
 - [x] GuildScheduledEventCompleted
 - [ ] GuildScheduledEventCreated
 - [x] GuildScheduledEventStarted
