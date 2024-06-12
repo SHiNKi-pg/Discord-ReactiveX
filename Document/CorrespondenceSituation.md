@@ -75,7 +75,7 @@
 - [ ] StageEnded
 - [ ] StageStarted
 - [ ] StageUpdated
-- [ ] ThreadCreated
+- [x] ThreadCreated
 - [ ] ThreadDeleted
 - [ ] ThreadMemberJoin
 - [ ] ThreadMemberLeft
