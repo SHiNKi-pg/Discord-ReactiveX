@@ -60,7 +60,7 @@
 - [ ] PresenceUpdated
 - [x] ReactionAdded
 - [x] ReactionRemoved
-- [ ] ReactionCleared
+- [x] ReactionCleared
 - [ ] ReactionsRemovedForEmote
 - [ ] RecipientAdded
 - [ ] RecipientRemoved
