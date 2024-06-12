@@ -9,24 +9,24 @@ using System.Threading.Tasks;
 namespace DiscordRx.Arguments
 {
     /// <summary>
-    /// <seealso cref="BaseSocketClient.ReactionAdded"/> イベント引数用クラス
+    /// <seealso cref="BaseSocketClient.MessageUpdated"/> イベント引数用クラス
     /// </summary>
-    public class ReactionAddedArgs : IDownloadable
+    public class MessageUpdatedArgs : IDownloadable
     {
         /// <summary>
         /// メッセージ
         /// </summary>
-        public required Cacheable<IUserMessage, ulong> Message { get; init; }
+        public required Cacheable<IMessage, ulong> Message { get; init; }
+
+        /// <summary>
+        /// Socketメッセージ
+        /// </summary>
+        public required SocketMessage SocketMessage { get; init; }
 
         /// <summary>
         /// チャンネル
         /// </summary>
-        public required Cacheable<IMessageChannel, ulong> Channel { get; init; }
-
-        /// <summary>
-        /// リアクション
-        /// </summary>
-        public required SocketReaction Reaction { get; init; }
+        public required ISocketMessageChannel Channel { get; init; }
 
         /// <summary>
         /// 
@@ -34,7 +34,7 @@ namespace DiscordRx.Arguments
         /// <returns></returns>
         public async Task DownloadAsync()
         {
-            IEnumerable<Task> taskList = [Message.DownloadAsync(), Channel.DownloadAsync()];
+            IEnumerable<Task> taskList = [Message.DownloadAsync()];
 
             await Task.WhenAll(taskList).ConfigureAwait(false);
         }

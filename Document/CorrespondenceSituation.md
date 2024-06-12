@@ -53,7 +53,7 @@
 - [x] MessageDeleted
 - [x] MessageReceived
 - [ ] MessageBulkDeleted
-- [ ] MessageUpdated
+- [x] MessageUpdated
 - [ ] ModalSubmitted
 - [ ] PollVoteAdded
 - [ ] PollVoteRemoved

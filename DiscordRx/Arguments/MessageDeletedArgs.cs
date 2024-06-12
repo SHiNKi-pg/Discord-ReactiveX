@@ -11,7 +11,7 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <seealso cref="BaseSocketClient.MessageDeleted"/> イベント引数用クラス
     /// </summary>
-    public class MessageDeletedArgs
+    public class MessageDeletedArgs : IDownloadable
     {
         /// <summary>
         /// 削除されたメッセージ
@@ -22,5 +22,16 @@ namespace DiscordRx.Arguments
         /// 削除されたメッセージのチャンネル
         /// </summary>
         public required Cacheable<IMessageChannel, ulong> Channel { get; init; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task DownloadAsync()
+        {
+            IEnumerable<Task> taskList = [Message.DownloadAsync(), Channel.DownloadAsync()];
+
+            await Task.WhenAll(taskList).ConfigureAwait(false);
+        }
     }
 }
