@@ -84,7 +84,7 @@
 - [ ] UserCommandExecuted
 - [ ] UserIsTyping
 - [x] UserJoined
-- [ ] UserLeft
+- [x] UserLeft
 - [ ] UserUnbanned
 - [ ] UserUpdated
 - [ ] UserVoiceStateUpdated
