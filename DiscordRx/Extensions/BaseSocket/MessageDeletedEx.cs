@@ -13,7 +13,7 @@ namespace DiscordRx.Extensions.BaseSocket
     /// <summary>
     /// <seealso cref="BaseSocketClient.MessageDeleted"/> 拡張メソッド
     /// </summary>
-    public static class MessageDeleted
+    public static class MessageDeletedEx
     {
         private static IObservable<MessageDeletedArgs> NotifyMessageDeleted(this BaseSocketClient socketClient,
             Func<Action<MessageDeletedArgs>, Func<Cacheable<IMessage, ulong>, Cacheable<IMessageChannel, ulong>, Task>> conversion)
