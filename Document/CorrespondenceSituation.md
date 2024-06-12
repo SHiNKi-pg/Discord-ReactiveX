@@ -40,7 +40,7 @@
 - [ ] GuildStickerCreated
 - [ ] GuildStickerDeleted
 - [ ] GuildStickerUpdated
-- [ ] GuildUnavailable
+- [x] GuildUnavailable
 - [ ] IntegrationCreated
 - [ ] IntegrationDeleted
 - [ ] IntegrationUpdated
