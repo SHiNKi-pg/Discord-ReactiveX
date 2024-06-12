@@ -59,7 +59,7 @@
 - [ ] PollVoteRemoved
 - [ ] PresenceUpdated
 - [x] ReactionAdded
-- [ ] ReactionRemoved
+- [x] ReactionRemoved
 - [ ] ReactionCleared
 - [ ] ReactionsRemovedForEmote
 - [ ] RecipientAdded
