@@ -47,7 +47,7 @@
 - [ ] InteractionCreated
 - [ ] InviteCreated
 - [ ] InviteDeleted
-- [ ] JoinedGuild
+- [x] JoinedGuild
 - [ ] LeftGuild
 - [ ] MessageCommandExecuted
 - [x] MessageDeleted
