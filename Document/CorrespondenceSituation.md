@@ -82,7 +82,7 @@
 - [ ] ThreadUpdated
 - [ ] UserBanned
 - [ ] UserCommandExecuted
-- [ ] UserIsTyping
+- [x] UserIsTyping
 - [x] UserJoined
 - [x] UserLeft
 - [ ] UserUnbanned
