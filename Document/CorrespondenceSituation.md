@@ -13,7 +13,7 @@
 - [ ] ApplicationCommandDeleted
 - [ ] ApplicationCommandUpdated
 - [ ] AuditLogCreated
-- [ ] AutocompleteExecuted
+- [x] AutocompleteExecuted
 - [ ] AutoModActionExecuted
 - [ ] AutoModRuleCreated
 - [ ] AutoModRuleDeleted
