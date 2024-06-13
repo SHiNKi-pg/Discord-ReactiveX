@@ -32,7 +32,7 @@
 - [x] GuildMemberUpdated
 - [x] GuildScheduledEventCancelled
 - [x] GuildScheduledEventCompleted
-- [ ] GuildScheduledEventCreated
+- [x] GuildScheduledEventCreated
 - [x] GuildScheduledEventStarted
 - [ ] GuildScheduledEventUpdated
 - [ ] GuildScheduledEventUserAdded
