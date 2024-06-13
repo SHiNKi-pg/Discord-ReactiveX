@@ -20,7 +20,7 @@
 - [ ] AutoModRuleUpdated
 - [x] ButtonExecuted
 - [x] ChannelCreated
-- [ ] ChannelDestroyed
+- [x] ChannelDestroyed
 - [ ] ChannelUpdated
 - [ ] CurrentUserUpdated
 - [ ] EntitlementCreated
