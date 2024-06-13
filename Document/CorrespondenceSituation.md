@@ -69,7 +69,7 @@
 - [ ] RoleDeleted
 - [ ] RoleUpdated
 - [x] SelectMenuExecuted
-- [ ] SlashCommandExecuted
+- [x] SlashCommandExecuted
 - [ ] SpeakerAdded
 - [ ] SpeakerRemoved
 - [ ] StageEnded
