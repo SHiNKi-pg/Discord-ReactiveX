@@ -19,7 +19,7 @@
 - [ ] AutoModRuleDeleted
 - [ ] AutoModRuleUpdated
 - [x] ButtonExecuted
-- [ ] ChannelCreated
+- [x] ChannelCreated
 - [ ] ChannelDestroyed
 - [ ] ChannelUpdated
 - [ ] CurrentUserUpdated
