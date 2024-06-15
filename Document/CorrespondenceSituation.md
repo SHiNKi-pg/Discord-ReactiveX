@@ -9,7 +9,7 @@
 
 ## Discord.WebSocket
 ### BaseSocketClient
-- [ ] ApplicationCommandCreated
+- [x] ApplicationCommandCreated
 - [ ] ApplicationCommandDeleted
 - [ ] ApplicationCommandUpdated
 - [ ] AuditLogCreated
