@@ -11,7 +11,7 @@
 ### BaseSocketClient
 - [x] ApplicationCommandCreated
 - [x] ApplicationCommandDeleted
-- [ ] ApplicationCommandUpdated
+- [x] ApplicationCommandUpdated
 - [ ] AuditLogCreated
 - [x] AutocompleteExecuted
 - [ ] AutoModActionExecuted
