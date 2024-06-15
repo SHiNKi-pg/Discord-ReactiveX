@@ -98,7 +98,7 @@
 - [ ] ShardReady
 
 ### DiscordSocketClient
-- [ ] Connected
+- [x] Connected
 - [ ] Disconnected
 - [ ] LatencyUpdated
 - [x] Ready
