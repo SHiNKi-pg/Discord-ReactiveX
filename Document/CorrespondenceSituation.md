@@ -10,7 +10,7 @@
 ## Discord.WebSocket
 ### BaseSocketClient
 - [x] ApplicationCommandCreated
-- [ ] ApplicationCommandDeleted
+- [x] ApplicationCommandDeleted
 - [ ] ApplicationCommandUpdated
 - [ ] AuditLogCreated
 - [x] AutocompleteExecuted
