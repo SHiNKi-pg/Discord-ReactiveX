@@ -14,7 +14,7 @@
 - [x] ApplicationCommandUpdated
 - [x] AuditLogCreated
 - [x] AutocompleteExecuted
-- [ ] AutoModActionExecuted
+- [x] AutoModActionExecuted
 - [ ] AutoModRuleCreated
 - [ ] AutoModRuleDeleted
 - [ ] AutoModRuleUpdated
