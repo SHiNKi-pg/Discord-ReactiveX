@@ -12,7 +12,7 @@
 - [x] ApplicationCommandCreated
 - [x] ApplicationCommandDeleted
 - [x] ApplicationCommandUpdated
-- [ ] AuditLogCreated
+- [x] AuditLogCreated
 - [x] AutocompleteExecuted
 - [ ] AutoModActionExecuted
 - [ ] AutoModRuleCreated
