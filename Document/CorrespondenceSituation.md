@@ -42,7 +42,7 @@
 - [x] GuildStickerUpdated
 - [x] GuildUnavailable
 - [x] IntegrationCreated
-- [ ] IntegrationDeleted
+- [x] IntegrationDeleted
 - [ ] IntegrationUpdated
 - [ ] InteractionCreated
 - [ ] InviteCreated
