@@ -91,7 +91,7 @@
 - [x] RecipientAdded
 - [x] RecipientRemoved
 - [ ] RequestToSpeak
-- [ ] RoleCreated
+- [x] RoleCreated
 - [ ] RoleDeleted
 - [ ] RoleUpdated
 - [x] SelectMenuExecuted
