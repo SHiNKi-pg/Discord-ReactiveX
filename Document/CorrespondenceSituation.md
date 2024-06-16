@@ -44,7 +44,7 @@
 - [x] IntegrationCreated
 - [x] IntegrationDeleted
 - [x] IntegrationUpdated
-- [ ] InteractionCreated
+- [x] InteractionCreated
 - [ ] InviteCreated
 - [ ] InviteDeleted
 - [x] JoinedGuild
