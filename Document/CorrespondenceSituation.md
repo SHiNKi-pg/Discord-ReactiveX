@@ -15,7 +15,7 @@
 - [x] AuditLogCreated
 - [x] AutocompleteExecuted
 - [x] AutoModActionExecuted
-- [ ] AutoModRuleCreated
+- [x] AutoModRuleCreated
 - [ ] AutoModRuleDeleted
 - [ ] AutoModRuleUpdated
 - [x] ButtonExecuted
