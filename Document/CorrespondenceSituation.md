@@ -52,7 +52,7 @@
 - [x] MessageCommandExecuted
 - [x] MessageDeleted
 - [x] MessageReceived
-- [ ] MessageBulkDeleted
+- [x] MessagesBulkDeleted
 - [x] MessageUpdated
 - [x] ModalSubmitted
 - [ ] PollVoteAdded
