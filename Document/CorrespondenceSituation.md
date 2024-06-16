@@ -22,7 +22,7 @@
 - [x] ChannelCreated
 - [x] ChannelDestroyed
 - [x] ChannelUpdated
-- [ ] CurrentUserUpdated
+- [x] CurrentUserUpdated
 - [ ] EntitlementCreated
 - [ ] EntitlementDeleted
 - [ ] EntitlementUpdated
