@@ -92,7 +92,7 @@
 - [x] RecipientRemoved
 - [ ] RequestToSpeak
 - [x] RoleCreated
-- [ ] RoleDeleted
+- [x] RoleDeleted
 - [ ] RoleUpdated
 - [x] SelectMenuExecuted
 - [x] SlashCommandExecuted
