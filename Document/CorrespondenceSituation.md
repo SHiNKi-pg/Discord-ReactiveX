@@ -16,7 +16,7 @@
 - [x] AutocompleteExecuted
 - [x] AutoModActionExecuted
 - [x] AutoModRuleCreated
-- [ ] AutoModRuleDeleted
+- [x] AutoModRuleDeleted
 - [ ] AutoModRuleUpdated
 - [x] ButtonExecuted
 - [x] ChannelCreated
