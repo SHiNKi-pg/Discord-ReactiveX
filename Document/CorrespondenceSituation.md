@@ -49,7 +49,7 @@
 - [x] InviteDeleted
 - [x] JoinedGuild
 - [x] LeftGuild
-- [ ] MessageCommandExecuted
+- [x] MessageCommandExecuted
 - [x] MessageDeleted
 - [x] MessageReceived
 - [ ] MessageBulkDeleted
