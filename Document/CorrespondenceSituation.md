@@ -36,7 +36,7 @@
 - [x] GuildScheduledEventStarted
 - [x] GuildScheduledEventUpdated
 - [x] GuildScheduledEventUserAdded
-- [ ] GuildScheduledEventUserRemove
+- [x] GuildScheduledEventUserRemove
 - [ ] GuildStickerCreated
 - [ ] GuildStickerDeleted
 - [ ] GuildStickerUpdated
