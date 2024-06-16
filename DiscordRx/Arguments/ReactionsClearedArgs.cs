@@ -10,7 +10,8 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <see cref="BaseSocketClient.ReactionsCleared"/>引数
     /// </summary>
-    public class ReactionsClearedArgs : IDownloadable
+    public class ReactionsClearedArgs : IDownloadable,
+        IDiscordEventArgs<Cacheable<IUserMessage, ulong>, Cacheable<IMessageChannel, ulong>>
     {
         /// <summary>
         /// メッセージ
@@ -32,5 +33,17 @@ namespace DiscordRx.Arguments
 
             await Task.WhenAll(taskList).ConfigureAwait(false);
         }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<IMessageChannel, ulong> Arg2 => Channel;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<IUserMessage, ulong> Arg1 => Message;
+        #endregion
     }
 }

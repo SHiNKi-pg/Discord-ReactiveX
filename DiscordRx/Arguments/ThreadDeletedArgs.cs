@@ -11,7 +11,7 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <see cref="BaseSocketClient.ThreadDeleted"/>引数
     /// </summary>
-    public class ThreadDeletedArgs : IDownloadable
+    public class ThreadDeletedArgs : IDownloadable, IDiscordEventArgs<Cacheable<SocketThreadChannel, ulong>>
     {
         /// <summary>
         /// 
@@ -28,5 +28,12 @@ namespace DiscordRx.Arguments
 
             await Task.WhenAll(taskList).ConfigureAwait(false);
         }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<SocketThreadChannel, ulong> Arg1 => ThreadChannel;
+        #endregion
     }
 }

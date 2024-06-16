@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscordRx.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <seealso cref="BaseSocketClient.AuditLogCreated"/>引数
     /// </summary>
-    public class AuditLogCreatedArgs
+    public class AuditLogCreatedArgs : IDiscordEventArgs<SocketAuditLogEntry, SocketGuild>
     {
         /// <summary>
         /// 監査ログ
@@ -20,5 +21,16 @@ namespace DiscordRx.Arguments
         /// サーバー
         /// </summary>
         public required SocketGuild Guild { get; init; }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public SocketAuditLogEntry Arg1 => AuditLogEntry;
+        /// <summary>
+        /// 
+        /// </summary>
+        public SocketGuild Arg2 => Guild;
+        #endregion
     }
 }

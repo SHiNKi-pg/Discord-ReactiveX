@@ -1,4 +1,5 @@
 ﻿using Discord;
+using DiscordRx.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <see cref="BaseSocketClient.ReactionRemoved"/>引数
     /// </summary>
-    public class ReactionRemovedArg : ReactionsClearedArgs
+    public class ReactionRemovedArg : ReactionsClearedArgs,
+        IDiscordEventArgs<Cacheable<IUserMessage, ulong>, Cacheable<IMessageChannel, ulong>, SocketReaction>
     {
 
         /// <summary>
@@ -18,5 +20,11 @@ namespace DiscordRx.Arguments
         /// </summary>
         public required SocketReaction Reaction { get; init; }
 
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public SocketReaction Arg3 => Reaction;
+        #endregion
     }
 }

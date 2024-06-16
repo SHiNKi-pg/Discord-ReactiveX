@@ -10,7 +10,8 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <see cref="BaseSocketClient.UserIsTyping"/>引数
     /// </summary>
-    public class UserIsTypingArgs : IDownloadable
+    public class UserIsTypingArgs : IDownloadable,
+        IDiscordEventArgs<Cacheable<IUser, ulong>, Cacheable<IMessageChannel, ulong>>
     {
         /// <summary>
         /// ユーザー
@@ -32,5 +33,17 @@ namespace DiscordRx.Arguments
 
             await Task.WhenAll(taskList).ConfigureAwait(false);
         }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<IMessageChannel, ulong> Arg2 => Channel;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<IUser, ulong> Arg1 => User;
+        #endregion
     }
 }

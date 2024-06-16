@@ -12,7 +12,8 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <seealso cref="BaseSocketClient.MessageUpdated"/> イベント引数用クラス
     /// </summary>
-    public class MessageUpdatedArgs : IDownloadable
+    public class MessageUpdatedArgs : IDownloadable,
+        IDiscordEventArgs<Cacheable<IMessage, ulong>, SocketMessage, ISocketMessageChannel>
     {
         /// <summary>
         /// メッセージ
@@ -39,5 +40,22 @@ namespace DiscordRx.Arguments
 
             await Task.WhenAll(taskList).ConfigureAwait(false);
         }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public ISocketMessageChannel Arg3 => Channel;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SocketMessage Arg2 => SocketMessage;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<IMessage, ulong> Arg1 => Message;
+        #endregion
     }
 }

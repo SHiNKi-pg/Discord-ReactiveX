@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscordRx.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <seealso cref="BaseSocketClient.AutoModActionExecuted"/>引数
     /// </summary>
-    public class AutoModActionExecutedArgs
+    public class AutoModActionExecutedArgs : IDiscordEventArgs<SocketGuild, AutoModRuleAction, AutoModActionExecutedData>
     {
         /// <summary>
         /// サーバー
@@ -25,5 +26,22 @@ namespace DiscordRx.Arguments
         /// 実行データ
         /// </summary>
         public required AutoModActionExecutedData ExecutedData { get; init; }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public AutoModActionExecutedData Arg3 => ExecutedData;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public AutoModRuleAction Arg2 => AutoModRuleAction;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SocketGuild Arg1 => Guild;
+        #endregion
     }
 }

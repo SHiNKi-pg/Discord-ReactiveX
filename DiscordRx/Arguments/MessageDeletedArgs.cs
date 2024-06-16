@@ -12,7 +12,8 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <seealso cref="BaseSocketClient.MessageDeleted"/> イベント引数用クラス
     /// </summary>
-    public class MessageDeletedArgs : IDownloadable
+    public class MessageDeletedArgs : IDownloadable,
+        IDiscordEventArgs<Cacheable<IMessage, ulong>, Cacheable<IMessageChannel, ulong>>
     {
         /// <summary>
         /// 削除されたメッセージ
@@ -34,5 +35,17 @@ namespace DiscordRx.Arguments
 
             await Task.WhenAll(taskList).ConfigureAwait(false);
         }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<IMessageChannel, ulong> Arg2 => Channel;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<IMessage, ulong> Arg1 => Message;
+        #endregion
     }
 }

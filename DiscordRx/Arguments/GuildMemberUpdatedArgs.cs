@@ -11,7 +11,8 @@ namespace DiscordRx.Arguments
     /// <summary>
     /// <see cref="BaseSocketClient.GuildMemberUpdated"/>引数
     /// </summary>
-    public class GuildMemberUpdatedArgs : IDownloadable
+    public class GuildMemberUpdatedArgs : IDownloadable,
+        IDiscordEventArgs<Cacheable<SocketGuildUser, ulong>, SocketGuildUser>
     {
         /// <summary>
         /// 前ユーザー情報
@@ -33,5 +34,17 @@ namespace DiscordRx.Arguments
 
             await Task.WhenAll(taskList).ConfigureAwait(false);
         }
+
+        #region IEventArgs
+        /// <summary>
+        /// 
+        /// </summary>
+        public SocketGuildUser Arg2 => UserInfo;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Cacheable<SocketGuildUser, ulong> Arg1 => BeforeUserInfo;
+        #endregion
     }
 }
