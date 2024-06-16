@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiscordRx
+namespace DiscordRx.Core
 {
     /// <summary>
     /// ダウンロード可能インターフェース
