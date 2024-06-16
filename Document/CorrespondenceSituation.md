@@ -23,7 +23,7 @@
 - [x] ChannelDestroyed
 - [x] ChannelUpdated
 - [x] CurrentUserUpdated
-- [ ] EntitlementCreated
+- [x] EntitlementCreated
 - [ ] EntitlementDeleted
 - [ ] EntitlementUpdated
 - [x] GuildAvailable
