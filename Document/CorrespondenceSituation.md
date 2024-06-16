@@ -43,7 +43,7 @@
 - [x] GuildUnavailable
 - [x] IntegrationCreated
 - [x] IntegrationDeleted
-- [ ] IntegrationUpdated
+- [x] IntegrationUpdated
 - [ ] InteractionCreated
 - [ ] InviteCreated
 - [ ] InviteDeleted
