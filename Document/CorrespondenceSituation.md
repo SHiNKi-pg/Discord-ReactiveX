@@ -25,7 +25,7 @@
 - [x] CurrentUserUpdated
 - [x] EntitlementCreated
 - [x] EntitlementDeleted
-- [ ] EntitlementUpdated
+- [x] EntitlementUpdated
 - [x] GuildAvailable
 - [ ] GuildJoinRequestDeleted
 - [ ] GuildMembersDownloaded
