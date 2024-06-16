@@ -62,7 +62,7 @@
 - [x] ReactionRemoved
 - [x] ReactionsCleared
 - [x] ReactionsRemovedForEmote
-- [ ] RecipientAdded
+- [x] RecipientAdded
 - [ ] RecipientRemoved
 - [ ] RequestToSpeak
 - [ ] RoleCreated
