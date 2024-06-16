@@ -12,8 +12,14 @@ namespace DiscordRx.Arguments
     /// </summary>
     public class GuildStickerUpdatedArgs : IDiscordEventArgs<SocketCustomSticker, SocketCustomSticker>
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public required SocketCustomSticker Arg2 { get; init; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public required SocketCustomSticker Arg1 { get; init; }
     }
 }
