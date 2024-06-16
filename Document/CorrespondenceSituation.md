@@ -1,5 +1,27 @@
 
 # 対応状況
+## Discord.Commands
+### CommandService
+- [ ] CommandExecuted
+- [ ] Log
+
+## Discord.Interactions
+### InteractionService
+- [ ] AutocompleteCommandExecuted
+- [ ] AutocompleteHandlerExecuted
+- [ ] ComponentCommandExecuted
+- [ ] ContextCommandExecuted
+- [ ] InteractionExecuted
+- [ ] Log
+- [ ] ModalCommandExecuted
+- [ ] SlashCommandExecuted
+
+## Discord.Net.WebSockets
+### IWebSocketClient
+- [ ] BinaryMessage
+- [ ] Closed
+- [ ] TextMessage
+
 ## Discord.Rest
 ### BaseDiscordClient
 - [x] Log
