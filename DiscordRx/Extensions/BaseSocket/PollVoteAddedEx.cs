@@ -23,7 +23,7 @@ namespace DiscordRx.Extensions.BaseSocket
         }
 
         /// <summary>
-        /// アンケートに投票が追加されたときに通知されます。。
+        /// アンケートに投票が追加されたときに通知されます。
         /// </summary>
         /// <param name="client"></param>
         /// <returns></returns>
