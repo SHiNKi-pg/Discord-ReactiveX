@@ -7,6 +7,10 @@
 - [x] LoggedOut
 - [x] SentRequest
 
+## Discord.Webhook
+### DiscordWebhookClient
+- [x] Log
+
 ## Discord.WebSocket
 ### BaseSocketClient
 - [x] ApplicationCommandCreated
