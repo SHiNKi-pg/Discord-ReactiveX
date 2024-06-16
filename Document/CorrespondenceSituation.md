@@ -5,7 +5,7 @@
 - [x] Log
 - [x] LoggedIn
 - [x] LoggedOut
-- [ ] SentRequest
+- [x] SentRequest
 
 ## Discord.WebSocket
 ### BaseSocketClient
