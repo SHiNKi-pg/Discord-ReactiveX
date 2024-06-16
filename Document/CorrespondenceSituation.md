@@ -55,7 +55,7 @@
 - [x] MessagesBulkDeleted
 - [x] MessageUpdated
 - [x] ModalSubmitted
-- [ ] PollVoteAdded
+- [x] PollVoteAdded
 - [ ] PollVoteRemoved
 - [x] PresenceUpdated
 - [x] ReactionAdded
