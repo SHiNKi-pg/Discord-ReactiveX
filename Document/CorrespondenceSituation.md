@@ -21,7 +21,7 @@
 - [x] ButtonExecuted
 - [x] ChannelCreated
 - [x] ChannelDestroyed
-- [ ] ChannelUpdated
+- [x] ChannelUpdated
 - [ ] CurrentUserUpdated
 - [ ] EntitlementCreated
 - [ ] EntitlementDeleted
