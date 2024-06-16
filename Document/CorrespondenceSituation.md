@@ -24,7 +24,7 @@
 - [x] ChannelUpdated
 - [x] CurrentUserUpdated
 - [x] EntitlementCreated
-- [ ] EntitlementDeleted
+- [x] EntitlementDeleted
 - [ ] EntitlementUpdated
 - [x] GuildAvailable
 - [ ] GuildJoinRequestDeleted
