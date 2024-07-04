@@ -16,6 +16,17 @@
 - [ ] ModalCommandExecuted
 - [ ] SlashCommandExecuted
 
+## Discord.Net.Audio
+### IAudioClient
+- [ ] ClientDisconnected
+- [ ] Connected
+- [ ] Disconnected
+- [ ] LatencyUpdated
+- [ ] SpeakingUpdating
+- [ ] StreamCreated
+- [ ] StreamDestroyed
+- [ ] UdpLatencyUpdated
+
 ## Discord.Net.WebSockets
 ### IWebSocketClient
 - [ ] BinaryMessage
