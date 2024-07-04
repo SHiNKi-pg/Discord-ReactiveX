@@ -111,7 +111,7 @@
 - [x] SpeakerRemoved
 - [x] StageEnded
 - [x] StageStarted
-- [ ] StageUpdated
+- [x] StageUpdated
 - [x] ThreadCreated
 - [x] ThreadDeleted
 - [ ] ThreadMemberJoin
