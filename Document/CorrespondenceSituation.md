@@ -90,7 +90,7 @@
 - [x] ReactionsRemovedForEmote
 - [x] RecipientAdded
 - [x] RecipientRemoved
-- [ ] RequestToSpeak
+- [x] RequestToSpeak
 - [x] RoleCreated
 - [x] RoleDeleted
 - [x] RoleUpdated
