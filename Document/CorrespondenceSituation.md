@@ -116,7 +116,7 @@
 - [x] ThreadDeleted
 - [x] ThreadMemberJoin
 - [x] ThreadMemberLeft
-- [ ] ThreadUpdated
+- [x] ThreadUpdated
 - [ ] UserBanned
 - [ ] UserCommandExecuted
 - [x] UserIsTyping
