@@ -115,7 +115,7 @@
 - [x] ThreadCreated
 - [x] ThreadDeleted
 - [x] ThreadMemberJoin
-- [ ] ThreadMemberLeft
+- [x] ThreadMemberLeft
 - [ ] ThreadUpdated
 - [ ] UserBanned
 - [ ] UserCommandExecuted
