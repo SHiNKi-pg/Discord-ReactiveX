@@ -114,7 +114,7 @@
 - [x] StageUpdated
 - [x] ThreadCreated
 - [x] ThreadDeleted
-- [ ] ThreadMemberJoin
+- [x] ThreadMemberJoin
 - [ ] ThreadMemberLeft
 - [ ] ThreadUpdated
 - [ ] UserBanned
