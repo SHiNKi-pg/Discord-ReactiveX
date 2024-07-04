@@ -110,7 +110,7 @@
 - [x] SpeakerAdded
 - [x] SpeakerRemoved
 - [x] StageEnded
-- [ ] StageStarted
+- [x] StageStarted
 - [ ] StageUpdated
 - [x] ThreadCreated
 - [x] ThreadDeleted
