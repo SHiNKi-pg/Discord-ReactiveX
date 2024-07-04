@@ -93,7 +93,7 @@
 - [ ] RequestToSpeak
 - [x] RoleCreated
 - [x] RoleDeleted
-- [ ] RoleUpdated
+- [x] RoleUpdated
 - [x] SelectMenuExecuted
 - [x] SlashCommandExecuted
 - [ ] SpeakerAdded
