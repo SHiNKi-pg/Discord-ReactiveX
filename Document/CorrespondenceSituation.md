@@ -107,7 +107,7 @@
 - [x] RoleUpdated
 - [x] SelectMenuExecuted
 - [x] SlashCommandExecuted
-- [ ] SpeakerAdded
+- [x] SpeakerAdded
 - [ ] SpeakerRemoved
 - [ ] StageEnded
 - [ ] StageStarted
