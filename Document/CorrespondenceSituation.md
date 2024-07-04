@@ -109,7 +109,7 @@
 - [x] SlashCommandExecuted
 - [x] SpeakerAdded
 - [x] SpeakerRemoved
-- [ ] StageEnded
+- [x] StageEnded
 - [ ] StageStarted
 - [ ] StageUpdated
 - [x] ThreadCreated
