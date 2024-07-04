@@ -108,7 +108,7 @@
 - [x] SelectMenuExecuted
 - [x] SlashCommandExecuted
 - [x] SpeakerAdded
-- [ ] SpeakerRemoved
+- [x] SpeakerRemoved
 - [ ] StageEnded
 - [ ] StageStarted
 - [ ] StageUpdated
